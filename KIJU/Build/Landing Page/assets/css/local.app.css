@@ -1,0 +1,437 @@
+/**
+ * Kiju 
+ * 
+ * Write your story.
+ * CSS Version : 10.16
+ *
+ * © 2022-2023 Kilian PEYRON
+*/
+@import url('base.css');
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 110px;
+    padding: 20px;
+    background: var(--main-bg-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header nav {
+    position: fixed;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    width: calc(100% - var(--container));
+    background: white;
+    padding: 9px;
+    border-radius: 5px 5px 0 0;
+    z-index: 4;
+}
+
+header nav .kiju_temp_launch_nav_countdown {
+    position: absolute;
+    bottom: -34px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: var(--main-bg-color);
+    padding: 7px 9px;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+}
+
+header nav .kiju_temp_launch_nav_countdown .countdown {
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+    font-weight: 500;
+}
+
+header nav .kiju_temp_launch_nav_countdown .countdown div {
+    margin-right: 7px;
+}
+
+header nav .logo {
+    display: inline-flex;
+}
+
+header nav .logo img {
+    width: 120px;
+}
+
+header nav .links {
+    margin-left: auto;
+    margin-right: 0;
+    list-style: none;
+}
+
+header nav .links .btn {
+    background: var(--main-bg-color);
+    padding: 15px 20px;
+    font-family: "FK Upright";
+    font-size: 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header video,
+header .filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+header .filter {
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 150px;
+    line-height: 150px;
+    width: 600px;
+    text-align: center;
+    z-index: 3;
+}
+
+header h4 {
+    margin-top: 25px;
+    color: rgba(255, 255, 255, .7);
+    font-weight: 500;
+    text-align: center;
+    z-index: 3;
+}
+
+section h2 {
+    font-size: 80px;
+}
+
+section.kiju_temp_launch_section_countdown {
+    margin-top: 40px;
+}
+
+section .ready-for {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background: white;
+    border: 1px solid rgba(255, 255, 255, .04);
+    margin-top: 15px;
+    padding: 35px;
+    border-radius: 5px;
+}
+
+section .ready-for .gif {
+    width: 50%;
+}
+
+section .ready-for .gif,
+section .ready-for .gif img {
+    height: 100%;
+}
+
+section .ready-for .text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+
+section .ready-for h2,
+section .ready-for h3 {
+    color: black;
+}
+
+section .ready-for h3 {
+    font-size: 50px;
+}
+
+section .ready-for h2 {
+    font-size: 120px;
+    line-height: 100px;
+}
+
+section .ready-for .countdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 50px;
+    color: black;
+}
+
+section .ready-for .countdown div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section .ready-for .countdown div span {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+section.groups {
+    display: flex;
+    align-items: center;
+}
+
+section .group {
+    margin: 25px 20px 0 0;
+    width: 50%;
+}
+
+section .group:last-child {
+    margin-right: 0;
+}
+
+section .group .content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background: white;
+    color: var(--main-bg-color);
+    border: 1px solid rgba(255, 255, 255, .04);
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section .group .content.communities {
+    background-image: url('../img/jeune-homme-femme-utilisant-ordinateur-portable-appareils-gadgets-isoles-mur-blanc-concept-technologies-modernes-technologie-emotions-publicite-espace-copie-shopping-jeux-rencontre-education-ligne.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+section .group .content.posts {
+    background-image: url('../img/8585501.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+section .group .content .text {
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+section .group .content .text h3 {
+    font-family: "FK Upright";
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+section .group .content .text p {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    padding: 40px;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+footer .col {
+    max-width: 200px;
+}
+
+footer .col .logo img {
+    width: 70px;
+}
+
+footer .col .slogan {
+    color: rgba(255, 255, 255, .7);
+    font-weight: 500;
+    width: 105px;
+    margin-top: 15px;
+}
+
+footer .col ul  {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+footer .col ul span {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer .col ul li {
+    color: rgba(255, 255, 255, .7);
+    margin-bottom: 10px;
+}
+
+/**
+* Responsive
+**/ 
+
+@media screen and (max-width: 2300px) {
+    :root {
+        --container: 1000px;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    :root {
+        --container: 800px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    :root {
+        --container: 600px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    :root {
+        --container: 400px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --container: 200px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    :root {
+        --container: 100px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --container: 50px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    :root {
+        --container: 25px;
+    }
+
+    section.groups {
+        flex-direction: column;
+    }
+
+    section .group {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    section .group .content {
+        display: flex;
+        height: 470px;
+    }
+
+    section .group .content .text {
+        margin-bottom: 0;
+    }
+
+    footer {
+        padding: 30px 0 0 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    header h1 {
+        width: auto;
+        font-size: 120px;
+        line-height: 120px;
+    }
+
+    section .ready-for {
+        flex-direction: column;
+        height: auto;
+    }
+
+    section .ready-for .gif {
+        display: none;
+    }
+
+    section .ready-for .text {
+        width: 100%;
+    }
+
+    section .ready-for .countdown {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer .col {
+        margin-bottom: 20px;
+    }
+
+    footer .col:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    header {
+        margin-top: 95px;
+    }
+
+    header nav .logo img {
+        width: 90px;
+    }
+
+    header nav .links .btn {
+        font-size: 20px;
+    }
+    
+    header h1 {
+        width: auto;
+        font-size: 90px;
+        line-height: 90px;
+    }
+
+    section h2 {
+        font-size: 60px;
+    }
+
+    section .ready-for {
+        padding: 20px;
+    }
+
+    section .ready-for h3 {
+        font-size: 30px;
+    }
+
+    section .ready-for h2 {
+        font-size: 90px;
+        line-height: 70px;
+    }
+}

@@ -1,0 +1,20 @@
+/* Need Edit.css + Main.css */
+.main {
+    background:white !important;
+}
+
+
+.private--section {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.private--profil {
+    color: #BDBDBD;
+}
+
+.private--text {
+    margin-top: 0.7rem;
+    color: #BDBDBD;
+    font-weight: 600;
+}

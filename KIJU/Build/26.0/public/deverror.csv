@@ -1,0 +1,11 @@
+Code,Description
+kiju_dev_error_1,Erreur de connexion à la base de données
+kiju_dev_error_2,Impossible de publier une publication
+kiju_dev_error_3,Impossible de créer une communauté
+kiju_dev_error_4,Impossible de supprimer une publication
+kiju_dev_error_5,Impossible de créer une relation avec une communauté
+kiju_dev_error_6,Impossible de supprimer une relation avec une communauté
+kiju_dev_error_7,Impossible de mettre à jour la communauté
+kiju_dev_error_8,Impossible de supprimer la communauté
+kiju_dev_error_9,Impossible de créer une relation avec un utilisateur
+kiju_dev_error_10,Impossible de supprimer une relation avec un utilisateur

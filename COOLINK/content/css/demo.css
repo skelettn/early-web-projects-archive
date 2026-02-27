@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: "hind", sans-serif;
+  text-decoration: none;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: white !important;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.demo__form {
+  width: 470px;
+  background: white;
+  padding: 30px 60px;
+  border: 8px solid #0066ff;
+  border-radius: 30px;
+  max-width: 24rem;
+}
+
+.demo__circle {
+  width: 120px;
+  height: 120px;
+  background-color: #0066ff;
+  border-radius: 50%;
+}
+
+.demo__logo {
+  margin-top: 1.2rem;
+}
+
+.demo__btn {
+  border-radius: 30px;
+  border: 0;
+  width: 250px;
+  height: 35px;
+  background: #0066ff;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.demo__btn:hover {
+  transform: scale(1.02);
+}
+
+.demo__footer {
+  margin-top: 10px;
+  font-family: "FSKim Regular";
+  color: black;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: white !important;
+}
+
+h5 {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+/* ALL COPYRIGHT FIRELINK & Hypera */
+/* DASHBOARD BASE + "paper-dashboard.css" by Creative Tim */
+/* "FirelinkLTE.css", "app.firelinkv3.css", "pro.firelink.css", are under copyright by Hypera and Firelink */
+/* Hypera, Firelink.gg and the Firelink logo are trademarks of Hypera in the U.S. and/or other countries. */

@@ -1,0 +1,28 @@
+<?php
+if (isset($_GET['url'])) {
+  $url = $_GET['url'];
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Lecteur vidéo 0.1</title>
+</head>
+
+<body>
+
+  <div class="video">
+    <video id="video">
+      <source src="<?= $url ?>" type="video/mp4" />
+  </div>
+
+  <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

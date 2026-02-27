@@ -1,0 +1,412 @@
+/* ========== FONT ========== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#v2LoginBg {
+    background: white !important;
+    color: black !important;
+    height: 100vh;
+    width: 100vw;
+}
+
+a > .v2LoginBack {
+    color: white;
+}
+
+.v2LoginBack {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 17px;
+    z-index: 99999;
+}
+
+.v2LoginBack ion-icon {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.v2LoginContent {
+    display: flex;
+    height: 100%;
+}
+
+.v2LoginContent > div {
+    flex: 1;
+    width: 0;
+    justify-content: center;
+    width: 0;
+}
+
+.v2LoginContent > div:first-child {
+    position: relative;
+    background: linear-gradient(45deg, #FF0000 0%, #990000 39%, rgb(255, 73, 73) 100% );
+    background-size: 600% 600%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+.v2LoginContent > div:last-child {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.v2LoginContentLogo {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    width: 300px;
+    cursor: pointer;
+}
+
+.v2LoginContentText {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.v2LoginTitle {
+    font-size: 35px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #FF0000 0%, #990000 39%, rgb(255, 73, 73) 50%, #990000 61%, #FF0000 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    animation: move 4s ease infinite;
+}
+
+.v2LoginError {
+    padding: 10px 25px;
+    color: white;
+    margin: 10px 0 5px 0;
+    border-radius: 3px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #FF0000, #990000, rgb(255, 73, 73));
+    background-size: 600% 600%;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+.v2LoginInputs {
+    padding: 20px 0;
+}
+
+.v2LoginInputs label {
+    display: block;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.v2LoginInputs input {
+    width: 100%;
+    background: white;
+    color: black;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, .5);
+    transition: all .3s;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+}
+
+.v2LoginInputs button:disabled,
+.v2LoginInputs button[disabled]{
+  border: 1px solid #999999;
+  background: #cccccc;
+  color: #666666;
+}
+
+.v2LoginInputs button {
+    width: 100%;
+    background: linear-gradient(90deg, #FF0000 0%, #990000 39%, #FF0000 100%);
+    background-size: 200% 100%;
+    animation: move 2s ease infinite;
+    border-radius: 25px;
+    padding: 10px 10px;
+    margin: 10px 0;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    border: 1px solid transparent;
+    transition: all .3s;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+}
+
+.v2LoginInputsSeparator {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    color: black;
+}
+
+.v2LoginInputsSeparator::before, .v2LoginInputsSeparator::after {
+    background: black;
+    content: "";
+    flex: 1;
+    height: .025em;
+    margin: 0 .5em;
+}
+
+.v2LoginBtn {
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    margin: 13px 0;
+    border-radius: 25px;
+    transition: all .3s;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+}
+
+.v2LoginBtnDiscord {
+    background: #5865F2;
+    border: 1px solid #5865F2;
+    color: white;
+}
+
+.v2LoginBtnGoogle {
+    background: white;
+    border: 1px solid black;
+    color: black;
+}
+.v2LoginInputs input:hover, .v2LoginBtn:hover, .v2LoginInputs button:hover {
+    transform: scale(1.03);
+}
+
+.v2LoginBtn:last-child {
+    margin-bottom: 0;
+}
+
+.v2LoginForm {
+    position: relative;
+}
+
+.v2LoginLoading {
+    display: block;
+    margin: 20px 0;
+}
+
+.v2LoginLoading .loader {
+    position: relative;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: linear-gradient(#FF0000, #990000, rgb(255, 73, 73));
+    animation: animate 0.5s linear infinite;
+}  
+
+.v2LoginLoading .loader span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(#FF0000, #990000, rgb(255, 73, 73));
+}
+
+.v2LoginLoading .loader span:nth-child(1){
+    filter: blur(5px);
+}
+
+.v2LoginLoading .loader span:nth-child(2){
+    filter: blur(10px);
+}
+
+.v2LoginLoading .loader span:nth-child(3){
+    filter: blur(25px);
+}
+
+.v2LoginLoading .loader span:nth-child(4){
+    filter: blur(50px);
+}
+
+.v2LoginLoading .loader::after{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background: white;
+    border-radius: 50%;
+}
+
+.v2LoginInputsCode {
+    display: none;
+}
+
+.v2LoginInfos {
+    margin-top: 10px;
+    font-size: 11px;
+    color: #cccccc;
+    font-weight: 500;
+    text-align: center;
+    width: 290px;
+}
+
+.v2LoginCopy {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 700;
+    width: 100%;
+    color: #cccccc;
+}
+
+.v2LoginCopy span {
+    background: linear-gradient(90deg, #9921e8 0%, #5f72be 39%, #8495db 50%, #5f72be 61%, #9921e8 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    animation: move 4s ease infinite;
+}
+
+.v2LoginCopy img {
+    margin-left: 5px;
+    width: 35px;
+}
+
+
+@media screen and (max-width: 1147px) {
+    .v2LoginContent {
+        flex-direction: column;
+    }
+    .v2LoginContent > div:first-child, .v2LoginContent > div:last-child {
+        width: 100%;
+    }
+    .v2LoginContent > div:first-child {
+        flex: inherit;
+        height: 250px;
+    }
+    .v2LoginContentText {
+        display: none;
+    }
+    .v2LoginContentLogo {
+        width: 250px;
+    }
+}
+
+@media screen and (max-height: 896px) {
+    .v2LoginContentText {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 776px) {
+    .v2LoginContentLogo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+    }
+}
+
+@media screen and (max-height: 706px) {
+    .v2LoginContentLogo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+    }
+    a > .v2LoginBack > span {
+        display: none;
+    }
+    .v2LoginBack ion-icon {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 417px) {
+    .v2LoginInputs {
+        width: 275px;
+    }
+}
+
+@media screen and (max-width: 1147px) and (max-height: 759px) {
+    .v2LoginContent > div:first-child {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 1147px) and (max-height: 677px) {
+    .v2LoginContent > div:first-child {
+        height: 150px;
+    }
+}
+  
+@media screen and (max-width: 1147px) and (max-height: 617px) {
+    .v2LoginContent > div:first-child {
+        height: 100px;
+    }
+    .v2LoginContentLogo {
+        width: 100px;
+    }
+}
+
+@keyframes move {
+    0% { background-position: -100% 0%; }
+    100% { background-position: 100% 0%; }
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes animate {
+    0%{transform: rotate(0deg);} 
+    100%{transform: rotate(360deg);} 
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

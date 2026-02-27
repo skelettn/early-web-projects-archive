@@ -1,0 +1,31 @@
+RewriteEngine on
+# RewriteBase /
+
+Options +FollowSymlinks
+Options All -Indexes
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^account.kiju.me$
+RewriteRule ^$ https://account.kiju.me/auth [L,R=301,QSA]
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ public/?p=$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ac/([a-zA-Z0-9]+)$ ac&tab=$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ac/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ ac&tab=$1&subtab=$2 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ac/([a-zA-Z0-9]+)&err=([a-zA-Z0-9_-]+)$ ac&tab=$1&err=$2 [L,QSA]
+
+ErrorDocument 404 /home
+ErrorDocument 403 /home

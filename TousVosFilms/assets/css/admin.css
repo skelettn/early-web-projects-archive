@@ -1,0 +1,444 @@
+#admin .adminNav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100px;
+    padding: 15px 0;
+}
+
+#admin .adminNav > a > img {
+    width: 108px;
+    height: 75px;
+}
+
+#admin .adminNav .logout {
+    position: absolute;
+    left: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, .2);
+    padding: 4px 12px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#admin .adminNav .logout:hover {
+    transform: scale(1.05);
+    border: 1px solid rgba(255, 255, 255, .7);
+}
+
+#admin .adminNav .powered {
+    position: absolute;
+    right: 35px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+#admin .adminNav .powered img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+#admin #adminSideBar {
+    position: fixed;
+    top: 100px;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+    background: var(--rich-black-fogra-29);
+    left: 0;
+    height: calc(100vh - 100px);
+    width: 330px;
+}
+
+#admin #adminSideBar .adminSideBarLink, #admin #adminSideBarMobile .adminSideBarLink {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    background: var(--container);
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#admin #adminSideBar .adminSideBarLink:hover, #admin #adminSideBarMobile .adminSideBarLink:hover {
+    transform: scale(1.03);
+}
+
+#admin #adminSideBar .current, #admin #adminSideBarMobile .current {
+    background-image: linear-gradient(-45deg, #f7b42c, #fc575e, #f7b42c);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#admin #adminSideBar .adminSideBarLink span, #admin #adminSideBarMobile .adminSideBarLink span {
+    margin-right: auto;
+}
+
+#admin #adminSideBar .adminSideBarLink ion-icon, #admin #adminSideBarMobile .adminSideBarLink ion-icon{
+    margin-left: 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#admin #adminSideBar .adminSideBarStatus, #admin #adminSideBarMobile .adminSideBarStatus {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#admin #adminSideBar .adminSideBarStatus span, #admin #adminSideBarMobile .adminSideBarStatus span {
+    background: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+    background-size: 400% 400%;
+    animation: gradient 2s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#admin #adminMain {
+    margin-left: 40px;
+}
+
+#admin #adminMain .welcome {
+    padding-top: 15px;
+    font-size: 45px;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+#admin #adminMain .welcome span {
+    font-weight: 600;
+    font-size: 45px;
+}
+
+#admin #adminSideBarMobile {
+    display: none;
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+#admin #adminSideBarMobile .adminSideBarLink {
+    width: auto;
+}
+
+#admin .adminGrid {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#admin .adminGrid1 {
+    width: 50%;
+    border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+#admin .adminGrid .title {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#admin .adminGrid .title .add {
+    margin-left: 15px;
+}
+
+#admin .movies-shows, #admin .cast {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+#admin .tab {
+    height: calc(100vh / 3 - 50px);
+    margin-right: 25px;
+    overflow-y: scroll;
+}
+
+#admin .adminGrid2 {
+    padding-left: 30px;
+    width: 50%;
+}
+
+#admin table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+#admin td, #admin th {
+    padding: 8px;
+}
+
+#admin tr:nth-child(even){background-color: var(--container);}
+  
+#admin  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+}
+
+#admin tr td .edit ion-icon, #admin .adminGrid .title .add ion-icon {
+    padding: 6px;
+    background-image: linear-gradient(-45deg, #f7b42c, #fc575e, #f7b42c);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    border-radius: 50px;
+    font-size: 17px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#admin tr td .edit ion-icon:hover, #admin .adminGrid .title .add ion-icon:hover {
+    transform: scale(1.07);
+}
+
+#admin .infos h1 {
+    text-transform: uppercase;
+}
+
+#admin .infos .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#admin .infos .info a, #admin .infos .info .status {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 1px 20px;
+    font-weight: 700;
+    font-size: 25px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+#admin .infos .info .status  {
+    margin-right: auto;
+    background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+#admin .infos .info a  {
+    margin-left: 0;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .2);
+    margin-right: 15px;
+}
+
+#admin .infos .info a:hover, .modal .submit a:hover, .modal .submit input:hover {
+    transform: scale(1.07);
+    border: 1px solid rgba(255, 255, 255, .7);
+}
+
+#admin .infos .info .disabled {
+    opacity: .6;
+}
+
+#admin .infos .info .disabled:hover {
+    transform: scale(1.00);
+}
+
+.modal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.modal > div {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em 2em;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, .7);
+    background: var(--rich-black-fogra-29);
+  }
+
+.modal h1 {
+    padding-bottom: 15px;
+}
+
+.modal .inputs {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 350px;
+}
+
+.modal .inputs select, .modal .inputs input {
+    background: var(--container);
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+
+.modal .inputs input:last-child {
+    margin-bottom: 10px;
+}
+
+.modal .submit {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.modal .submit a, .modal .submit input {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 1px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+
+.modal .submit a {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.modal .submit input {
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width: 1500px) {
+    #adminSideBar {
+        width: 250px !important;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #admin #adminMain .welcome, #admin #adminMain .welcome span {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    #admin .adminGrid1 {
+        width: 100%;
+        border-right: 0;
+    }
+    #admin .adminGrid2 {
+        width: 100%;
+        padding-left: 0;
+    }
+    #admin .st {
+        height: auto;
+    }
+    #admin .cast {
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        margin-top: 25px;
+    }
+    #admin .cast .title{
+        line-height: 45px;
+    }
+    #admin .tab{
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 939px) {
+    #admin #adminSideBar {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 826px) {
+    #adminSideBar {
+        width: 200px !important;
+    }
+
+}
+
+@media screen and (max-width: 793px) {
+    #adminMain .welcome, #adminMain .welcome span {
+        font-size: 30px !important;
+    }
+}
+
+@media screen and (max-width: 623px) {
+    #admin #adminSideBar {
+        display: none;
+    }
+    #adminSideBarMobile {
+        display: block !important;
+    }
+    #admin #adminMain {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 497px) {
+    #admin .adminNav .logout {
+        left: 25px;
+        font-size: 13px;
+    }
+    #admin .adminNav .powered {
+        right: 25px;
+        font-size: 13px;
+    }
+    #admin #adminMain {
+        margin: 0 20px;
+    }
+    #admin .infos .info a {
+        margin-right: 0px;
+    }
+    .modal > div {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 393px) {
+    #admin .infos .info .status, #admin .infos .info a   {
+        font-size: 20px;
+    }
+    #admin .adminGrid .title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-height:  744px) {
+    #admin .movies-shows, #admin .settings {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,23 @@
+:root {
+	--live-indicator-shadow: hsla(0, 79%, 63%, 0.5);
+	--rich-black-fogra-30: #262837;
+	--rich-black-fogra-29: rgb(26, 29, 41);
+	--live-indicator: hsl(0, 79%, 63%);
+	--container-50: hsla(233, 18%, 18%, 0.8);
+	--container: hsl(233, 18%, 18%);
+	--red: #ff2b2b;
+	--off-white: hsl(0, 0%, 88%);
+	--yellow: hsl(45, 100%, 54%);
+	--white: hsl(0, 0%, 100%);
+	--red2: #dd0000;
+	--ff-poppins: "Poppins", sans-serif;
+	--section-heading: 40px;
+	--fs-lg: 22px;
+	--fs-md: 17px;
+	--fs-sm: 14px;
+	--fs-x-sm: 12px;
+	--fw-7: 700;
+	--fw-6: 600;
+	--fw-5: 500;
+	--px: 120px;
+}

@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "hind",sans-serif;
+  text-decoration: none;
+}
+
+body{
+  background: #171A21;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-form{
+  width: 470px;
+  background: #1C2127;
+  padding: 30px 60px;
+  box-shadow: 4.5px 4.5px 10px rgba(0, 0, 0, .3);
+  border-radius: 3px;
+}
+
+.logo{
+  height: 50px;
+  text-align: center;
+}
+
+.logo img{
+  height: 50px;
+}
+
+
+h3 {
+  color: black !important;
+}
+
+.hypera-top-space {
+  margin-top: 20px;
+}
+
+.circles {
+  display: flex;
+  vertical-align: middle;
+  text-align:center;
+  position:relative; /*makes left effective*/
+  display:table-cell;
+}
+.circle-with-text {
+  background: linear-gradient(45deg, #85FFBD, #FFFB7D);
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  height: 180px;
+  width: 180px;
+  color: #1C2127;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #85FFBD 0%, #aaff85 51%, #FFFB7D  100%)}
+.btn-grad {
+   margin: 20px;
+   padding: 10px 25px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: #1C2127;     
+   font-weight: 625;       
+   box-shadow: 0 0 20px #1C2127;
+   border-radius: 10px;
+   display: block;
+   text-decoration: none;
+   border: 0;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #1C2127;
+   text-decoration: none;
+ }
+
+.white {
+  color: white;
+}

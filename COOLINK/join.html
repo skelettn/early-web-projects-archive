@@ -1,0 +1,87 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rejoignez-nous | Coolink</title>
+      <link rel="icon" href="style/img/favicon.png" sizes="32x32" type="image/png">
+      <link rel="stylesheet" href="style/bootstrap.min.css">
+      <link rel="stylesheet" href="style/join.css" />
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/d749d58854.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <div class="container">
+            <a class="navbar-brand" href=""><img src="content/img/newCoolink/small/coolink_bsmall.png" alt="Coolink"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link l1" href="lg/signin">Connexion</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link l2" href="lg/signup">Commencer</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="container register-media" id="register-media">
+         <h1>Commencez avec COOLINK</h1>
+         <button type="button" class="btn btn-lg btn-lg">Continuer avec Apple</button>
+         <button type="button" class="btn btn-lg btn-lg">Continuer avec Google</button>
+         <button type="button" class="btn btn-lg btn-lg">Continuer avec Facebook</button>
+         <p>Ou alors utilise un mot de passe pour t'<u><a href="#register" class="media-link" id="register-link">inscrire</a></u> ou te <u><a href="" class="media-link">connecter</a></u></p>
+      </div>
+      <div class="container register" id="register">
+         <h1>Inscription</h1>
+         <form method="POST" action="">
+            <div class="form-group">
+               <input type="email" class="form-control input-form mb-3" placeholder="Email">
+               <input type="email" class="form-control input-form mb-4" placeholder="Mot de passe">
+               <input type="submit" class="btn btn-submit" value="M'inscrire">
+               <p>Ou alors utilise un <u><a href="#" class="media-link" id="registermedia-link">réseau social</a></u> pour te connecter</p>
+             </div>
+         </form>
+      </div>
+      <div class="end-section"></div>
+      <section id="footer">
+         <div class="container footer">
+            <ul class="links">
+               <li><a href="">Accueil</a></li>
+               <li><a href="">Commencer</a></li>
+               <li><a href="">Connexion</a></li>
+               <li><a href="">A-propos</a></li>
+               <li><a href="">Besoin d'aide</a></li>
+            </ul>
+         </div>
+      </section>
+    <script src="style/bootstrap.min.js"></script>
+    <script>
+      let echoRegister = document.querySelector("#register-link");
+      let echoRegisterMedia = document.querySelector("#registermedia-link");
+
+      let registerForm = document.querySelector("#register");
+      let registerMediaForm = document.querySelector("#register-media");
+
+      echoRegister.addEventListener( "click",
+      () => {
+         registerForm.style.display = "block";
+         registerMediaForm.style.display = "none";
+      }
+      , false)
+
+      echoRegisterMedia.addEventListener( "click",
+      () => {
+         registerForm.style.display = "none";
+         registerMediaForm.style.display = "block";
+      }
+      , false)
+
+    </script>
+   </body>
+</html>

@@ -1,0 +1,1 @@
+<div class="not-found">404 - Cette page n'a pas été trouvé.</div>

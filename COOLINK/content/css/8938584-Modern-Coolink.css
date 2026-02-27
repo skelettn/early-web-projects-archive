@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+@font-face {
+    font-family: "Gotham Bold";
+    src: url("../fonts/GothamRoundedBold_21016.ttf");
+}
+
+* {
+    font-family: "Gotham Bold";
+}
+
+.navbar {
+    background-color: transparent !important;
+    padding-top: 1rem;
+}
+
+.navbar-toggler, .navbar-toggler:active {
+    border: 0px;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #383c43 !important;
+}
+
+.l1 {
+    border: 2px solid transparent;
+    border-radius: 30px;
+    text-align: center;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.l2 {
+    border: 2px solid #001d2f;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 170px;
+}
+
+.register-media, .register, .login {
+    text-align: center;
+}
+
+.media-link, .media-link:hover {
+    color: black !important;
+}
+
+h1 {
+    line-height: 1.125;
+    font-weight: 800;
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+.btn-lg {
+    margin: 0 auto;
+    display: block;
+    width: 500px;
+    border-radius: 2.5em;
+    font-size: 1.2em;
+    border: 3px solid #000;
+    background-color: #fff !important;
+    color: #000;
+    padding: 10px 50px;
+    margin-top: 1rem;
+}
+
+.btn-lg:hover, .btn-lg:active, .btn-lg:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+#register {
+    display: block;
+}
+
+#discover {
+    display: block;
+}
+
+#login {
+    display: block;
+}
+
+
+input::placeholder {
+    color: #cecece !important;
+}
+
+.input-form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 60px;
+    font-size: 2rem;
+    color: black;
+    border-radius: 10px;
+    border: 4px solid #EEEEEE;
+}
+
+.input-form:active, .input-form:focus {
+    box-shadow: none;
+    outline: none;
+    border: 4px solid #000;
+}
+
+@media (max-width: 550px) {
+    .input-form {
+        width: 300px;
+    }
+}
+
+.btn-submit {
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    border-radius: 2.5em;
+    font-size: 1.8rem;
+    background-color: #000 !important;
+    color: white;
+    padding: 20px 50px;
+    margin-top: 1rem;
+}
+
+.btn-submit:hover, .btn-submit:active, .btn-submit:focus {
+    box-shadow: none;
+    outline: none;
+    color: white;
+}
+
+.erreur {
+    padding: 15px 30px;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    color: white;
+    background: black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    margin-top: 2rem;
+}
+
+@media (max-width: 550px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+    .btn-lg {
+        width: 300px;
+    }
+    .sec-titl {
+        font-size: 2.25rem;
+    }
+    .sec-desc {
+        font-size: 1.25rem;
+    }
+    ul li a {
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 992px) {
+    .l2, .l1 {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+
+.end-section {
+    margin-top: 330px;
+}
+
+#footer {
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    display: block;
+    font-size: 0.875em;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    color: white;
+}
+
+/* DISCOVER */
+
+.discover {
+    text-align: left;
+    font-size: 2rem;
+}
+
+.discover-card {
+    max-height: 100px;
+    min-height: 100px;
+    box-shadow: 0 0 5px 0 rgb(68 43 148 / 20%);
+    border-radius: 8px;
+    transition: all .3s;
+    cursor: pointer;
+    border: 0;
+    color: rgba(0, 0, 0, .7);
+}
+
+.discover-card:hover {
+    transform: translateY(-5px);
+}
+
+.discover-people-card {
+    min-height: 150px;
+    box-shadow: 0 0 5px 0 rgb(68 43 148 / 20%);
+    border-radius: 8px;
+    transition: all .3s;
+    cursor: pointer;
+    border: 0;
+    color: rgba(0, 0, 0, .7);
+}
+
+.discover-people-card:hover {
+    transform: translateY(-5px);
+}
+
+.discover-card-title {
+    text-align: left;
+}
+
+.end-discover-section {
+    margin-top: 150px;
+}
+
+/* THEMES  */
+
+.discover-theme1 {
+	background: #f0f0f0;
+}
+
+.discover-themedark {
+	background: #16161a;
+}
+
+.discover-theme2 {
+	background: linear-gradient(0deg, #D9AFD9, #97D9E1);
+}
+
+.discover-theme3 {
+	background-color: #aaf0cb;
+	background: linear-gradient(0deg, #aaf0cb, #39e09b);
+}
+
+.discover-theme4 {
+	background-color: #fd8f67;
+	background: linear-gradient(0deg, #fd8f67, #d463a3);
+}
+
+.discover-theme5 {
+	background-color: #ffb9c6;
+	background: linear-gradient(0deg, #ffb9c6, #694ff6);
+}
+
+.discover-theme6 {
+	background-image: linear-gradient(155deg, #0bafff, #39e09b 50%, #ffc213);
+	box-shadow: rgba(0, 0, 0, .08) 0 96px 96px 0;
+}
+
+.discover-theme7 {
+	background-color: #76f3fa;
+	background: linear-gradient(0deg, #76f3fa, #3a4eff);
+}
+
+.row a {
+    text-decoration: none;
+}
+
+.avatar {
+    width: 100px;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    box-shadow: 0 12px 18px 2px rgb(34 0 51 / 4%), 0 6px 22px 4px rgb(7 48 114 / 12%), 0 6px 10px -4px rgb(14 13 26 / 12%);
+}
+
+.avatar--default {
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	line-height: 100px;
+	text-align: center;
+	background: #efefef;
+	box-shadow: 0 12px 18px 2px rgb(34 0 51 / 4%), 0 6px 22px 4px rgb(7 48 114 / 12%), 0 6px 10px -4px rgb(14 13 26 / 12%);
+	color: #4B5473;
+	font-size: 40px;
+	font-weight: 800;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}

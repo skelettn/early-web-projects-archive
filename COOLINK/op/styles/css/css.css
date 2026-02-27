@@ -1,0 +1,135 @@
+html, body {
+    height: 100%;
+    font-size: 1rem;
+    font-family: 'Inter';
+}
+
+.bold {font-weight: 700;}
+.black {color: black;}
+.white {color: white;}
+.lightgrey {color: #697279;}
+
+.nav-link {
+    border-bottom: 3px solid transparent;
+}
+  
+.nav-link:hover {
+    border-bottom: 3px solid #59b1e9;
+    border-radius: 1.5px;
+}
+
+.gradient  {
+    background: rgb(2,0,36);
+    background: linear-gradient(45deg, rgba(2,0,36,1) 0%, #FBDA61 0%, #FF5ACD 100%);
+}
+
+.page-header {
+    margin-top: 4rem;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.title-page {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.header-features {
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.s_vf {
+    color: white !important;
+    font-size: 10px;
+}
+
+.start-btn {
+    width: 300px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.btn-dark {
+    background-color: #3b3b54;
+    color: #fff;
+}
+
+.mg-btn {
+    margin: 4px 0;
+}
+
+.info-header {
+    color: white;
+    font-size: 14px;
+}
+.companies h2 {
+    font-weight: 700;
+}
+
+
+.icon {
+    color: white;
+    height: 5rem;
+    width: 5rem;
+    font-size: 1.75rem;
+    border-radius: 100%;;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.icon-description {
+    font-size: 15px;
+}
+
+.start {
+    background-color: white;
+    padding: 4.5rem;
+}
+
+.start-card {
+    background-color: whitesmoke;
+    padding: 5rem;
+}
+
+.start-section-title {
+    margin: 0px 0 10px;
+    font-size: 1.75rem !important;
+    line-height: 2.25rem !important;
+}
+
+footer {
+    background-color:#151922;
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.py-11 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+
+
+/* Made by Firelink */

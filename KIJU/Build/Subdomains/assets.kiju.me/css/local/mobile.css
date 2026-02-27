@@ -1,0 +1,365 @@
+/**
+ * Kiju 
+ * 
+ * Write your story.
+ * CSS Version : 26.0
+ *
+ * © 2022-2024 Kilian PEYRON
+*/
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 1000px;
+  }
+  .sidebar {
+    left: calc(50% - 500px);
+  }
+  .right_content {
+    right: calc(50% - 500px);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    max-width: 900px;
+  }
+  .sidebar {
+    left: calc(50% - 450px);
+  }
+  .right_content {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .wrapper {
+    max-width: 800px;
+  }
+  .sidebar {
+    left: calc(50% - 400px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .wrapper {
+    max-width: 100%;
+  }
+
+  .content {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .sidebar,
+  .right_content {
+    display: none;
+  }
+  
+  .mobile-nav {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .dev-build {
+    font-size: 11px;
+    bottom: 55px;
+  }
+
+  #loginModal .loginModalContainer {
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+  }
+
+  #loginModal .loginModalContainer .qr, 
+  #loginModal .loginModalContainer .form {
+    width: 100%;
+  }
+
+  #loginModal .loginModalContainer .qr {
+    padding-top: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    border-right: 0;
+    padding-bottom: 15px;
+  }
+
+  #loginModal .loginModalContainer .qr .QRCode {
+    margin-top: 15px;
+  }
+
+  #loginModal .loginModalContainer .form {
+    padding: 15px 0;
+  }
+
+  #loginModal .loginModalContainer .form form h5 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .profile .profileData .stats .stat .title,
+  .communityPage .pageData .stats .stat .title {
+    font-size: 13px;
+  }
+
+  .profile .profileData .stats .stat .count,
+  .communityPage .pageData .stats .stat .count {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    margin: 0 auto 50px;
+  }
+
+  .post .data .authorMedia {
+    max-height: 200px;
+  }
+
+  #toast_Box {
+    bottom: 45px;
+  }
+
+  .discover .groups .communities {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .modal {
+    z-index: 13;
+  }
+
+  .modal .modalContainer {
+    position: absolute;
+    bottom: -800px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    width: 100%;
+    border: 0;
+    border-radius: 15px 15px 0 0;
+    animation: slideIn 0.3s forwards;
+  }
+
+  .modal:not(.show) .modalContainer {
+    animation: slideOut 0.3s forwards;
+  }
+
+  .modal.show .modalContainer {
+    bottom: 0;
+  }
+  
+  .modal .modalHeader .page-tabs {
+    width: 440px;
+  }
+
+  .modal .modalContent h2 {
+    font-size: 25px;
+  }
+
+  #loginModal .loginModalContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  #loginModal .loginModalContainer .qr, 
+  #loginModal .loginModalContainer .form {
+    width: auto;
+  }
+
+  #loginModal .loginModalContainer .form {
+    padding-bottom: 15px;
+  }
+
+  #toast_Box .toast {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    padding: 0;
+  }
+
+  .communitiesPage,
+  .updatesPage,
+  .discoverPage {
+    padding: 0 15px;
+  }
+
+  .warning {
+    margin: 15px;
+  }
+  
+  .tabs {
+    overflow-x: scroll;
+    width: 350px;
+    margin: 10px 0 10px 15px;
+  }
+
+  .profile .page-tabs,
+  .communityPage .page-tabs {
+    padding: 3px;
+  }
+
+  .page-tab {
+    margin-top: 5px;
+  }
+
+  .loginVerify .verifyContent p {
+    width: 250px;
+  }
+
+  .modal .modalHeader .page-tabs {
+    width: 370px;
+  }
+
+  .post {
+    padding: 5px 15px 8px;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+  }
+
+  .post:hover {
+    background: none;
+  }
+
+  .post:last-child {
+    border-bottom: 0;
+  }
+
+  .post .action-buttons {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+  }
+
+  .profile-data .banner {
+    height: 175px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .edit .delete {
+    display: block;
+    margin: 7px 0 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .modal .modalContent h2 {
+    font-size: 20px;
+    width: 350px;
+    margin: auto;
+  }
+
+  .modal .modalContent .modalFeatures {
+    padding: 15px 0;
+    width: 350px;
+    margin: auto;
+  }
+
+  .modal .modalContent .page-tabs,
+  .modal .modalHeader .page-tabs {
+    width: 330px;
+    margin: auto;
+  }
+
+  .modal .modalContent .subscription {
+    margin: auto auto 10px auto;
+  }
+
+  .modal .modalContent .subscription .description {
+    font-size: 17px;
+  }
+
+  .modal .modalContent .subscription .featured img {
+    height: 90px;
+  }
+
+  .post .data .authorMedia,
+  .post .data .authorContent .media {
+    max-height: 150px;
+  }
+
+  .post .data .authorContent .media iframe {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tabs {
+    width: 300px;
+  }
+
+  .loginVerify .verifyContent form {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .loginVerify .verifyContent form input {
+    margin-right: 0;
+  }
+
+  .loginVerify .verifyContent form button {
+    margin-bottom: 0;
+  }
+
+  .modal .modalHeader .page-tabs {
+    width: 300px;
+  }
+
+  .modal .modalContent .subscription .description {
+    font-size: 16px;
+  }
+
+  .modal .modalContent .subscription .featured img {
+    height: 80px;
+  }
+
+
+  .post .quote {
+    margin-left: 0;
+  }
+
+  .post .data .authorContent .media {
+    max-height: 100px;
+  }
+
+  .post .data .authorContent .media iframe {
+    height: 100px;
+  }
+
+  #toast_Box .toast {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .modal .modalHeader .page-tabs {
+    width: 250px;
+    margin: auto;
+  }
+
+  .modal .modalContent h2 {
+    padding-bottom: 10px;
+  }
+
+  .modal .modalContent .modalFeatures {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .modal .modalContent .features {
+    height: 190px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .modal .modalContent .features {
+    height: 150px;
+  }
+}

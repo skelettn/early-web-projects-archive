@@ -1,0 +1,1 @@
+<a href=""> <div class="account skeleton-post"> <div class="profilePicture skeleton"> <img src="" alt=""> </div><div class="data"> <h5 class="fullName skeleton skeletonText">Loading............</h5> <h5 class="userName skeleton skeletonText">@Loading...</h5> </div></div></a>

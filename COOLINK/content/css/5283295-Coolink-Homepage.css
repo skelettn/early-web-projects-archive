@@ -1,0 +1,698 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+html, body {
+    height: 100%;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+.bold {font-weight: 700;}
+.black {color: black;}
+.white {color: white;}
+.lightgrey {color: #697279;}
+
+.navbar {
+    background-color: #FFDBC3;
+    z-index: 100;
+}
+
+.nav-fixed {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-active {
+    background-color:#fff;
+    box-shadow: 5px -1px 12px -5px grey;
+}
+
+.navbar-toggler, .navbar-toggler:active {
+    border: 0px;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #383c43 !important;
+}
+
+.l1 {
+    border: 2px solid transparent;
+    border-radius: 30px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.l2 {
+    border: 2px solid #001d2f;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+.primary-color  {
+    background: #001d2f;
+}
+
+.bg-white {
+    background: white;
+}
+
+.page-header {
+    background-image: url(../Homepage-Images/header.jpg), url(../Homepage-Images/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 2em 0em 8em;
+    text-align: center;
+}
+
+.header-title {
+    color: #001d2f !important;
+    font-family: "FSKim Regular" !important;
+    font-size: 5.8rem !important;
+    font-weight: 700 !important;
+    margin: 0 0 0.5em 0;
+}
+
+@media (max-width:767px) {
+    .header-title {
+        line-height: 0.9 !important;
+    }
+}
+
+.header-sub {
+    font-family: "FSKim Regular" !important;
+    color: #001d2f;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0 0 2em 0;
+}
+
+.page-header p {
+    margin: 0 0 2em 0;
+}
+
+.header-features {
+    font-family: "FSKim Regular" !important;
+    color: #001d2f;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.header-btn {
+    margin: 1rem;
+    background: #001d2f;
+    color: white !important;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: 2.85em;
+    line-height: 2.95em;
+    padding: 0 2em;
+    text-align: center;
+    transition: .3s all;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    -ms-transition: .3s all;
+    -o-transition: .3s all;
+}
+
+.header-btn:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    background: #00111c;
+}
+
+
+.btn-dark {
+    background-color: #3b3b54;
+    color: #fff;
+}
+
+.mg-btn {
+    margin: 4px 0;
+}
+
+.info-header {
+    color: white;
+    font-size: 14px;
+}
+.companies h2 {
+    font-weight: 700;
+}
+
+.feature {
+    color: white;
+}
+
+.feature h1 {
+    font-weight: 700;
+}
+
+.feature ul {
+    padding-left: 2rem;
+    list-style-type: none;
+}
+
+.feature ul li {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.icons {
+    padding-bottom: 10rem;
+}
+
+.sec-titl {
+    font-family: "FSKim Regular" !important;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.sec-desc {
+    margin-bottom: 6rem;
+}
+
+.icon {
+    background: #F5F6F7;
+    height: 5rem;
+    width: 5rem;
+    font-size: 1.75rem;
+    border-radius: 100%;;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icon-title {
+    font-size: 18px;
+    font-weight: 600;
+    color:#4B5473;
+}
+
+.icon-description {
+    font-size: 15px;
+    line-height: normal;
+    color: #4B5473;
+}
+
+#demos {
+    background: #F5F6F7;
+    color: #001d2f;
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+}
+
+.gallery {
+    color: #001d2f;
+}
+
+.gallery img {
+    border-radius: 5%;
+}
+
+.btn-outline-secondary {
+    background: white;
+    color: #001D2F !important;
+    opacity: 1;
+    transition: .3s all;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    -ms-transition: .3s all;
+    -o-transition: .3s all;
+}
+
+.btn-outline-secondary:hover {
+    background: #001D2F;
+    color: white !important;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.services {
+    color: white;
+}
+
+.services .sh1 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    font-weight: 600;
+    text-align: center;
+    color: #001d2f;
+    font-family: "FSKim Regular" !important;
+}
+
+.services-title {
+    font-weight: 700;
+    color: #001d2f;
+    font-size: 25px;
+}
+
+.services-block span {
+    color: #383c43;
+}
+
+.img-services {
+    width: 70%;
+}
+
+.card {
+    position: static;
+}
+
+.price {
+    background: #F5F6F7;
+    color: #001d2f;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.price__h1 {
+    padding-top: 2.5rem;
+    padding-bottom: 1.2rem;
+    font-weight: 650;
+}
+
+.pricing {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 3em;
+}
+
+.pricing-item {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    text-align: center;
+    -webkit-flex: 0 1 330px;
+    flex: 0 1 330px;
+}
+
+.pricing-action {
+    color: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.pricing-action:focus {
+    outline: none;
+}
+
+.pricing-feature-list {
+    text-align: left;
+}
+
+.pricing-palden .pricing-item {
+    font-family: 'Open Sans', sans-serif;
+    cursor: default;
+    color: #84697c;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(46, 59, 125, 0.23);
+    border-radius: 20px 20px 10px 10px;
+    margin: 1em;
+}
+
+@media screen and (min-width: 66.25em) {
+    .pricing-palden .pricing-item {
+        margin: 1em -0.5em;
+    }
+    .pricing-palden .pricing__item--featured {
+        margin: 0;
+        z-index: 10;
+        box-shadow: 0 0 20px rgba(46, 59, 125, 0.23);
+    }
+}
+
+.pricing-palden .pricing-deco {
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(135deg,#4097f9,#0af0c7);
+    padding: 4em 0 9em;
+    position: relative;
+}
+
+.pricing-palden .pricing-deco-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+}
+
+.pricing-palden .pricing-title {
+    font-size: 0.75em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.pricing-palden .deco-layer {
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.pricing-palden .pricing-item:hover .deco-layer--1 {
+    -webkit-transform: translate3d(15px, 0, 0);
+    transform: translate3d(15px, 0, 0);
+}
+
+.pricing-palden .pricing-item:hover .deco-layer--2 {
+    -webkit-transform: translate3d(-15px, 0, 0);
+    transform: translate3d(-15px, 0, 0);
+}
+
+.pricing-palden .icon {
+    font-size: 2.5em;
+}
+
+.pricing-palden .pricing-price {
+    font-size: 5em;
+    font-weight: bold;
+    padding: 0;
+    color: #fff;
+    margin: 0 0 0.25em 0;
+    line-height: 0.75;
+}
+
+.pricing-palden .pricing-currency {
+    font-size: 0.15em;
+    vertical-align: top;
+}
+
+.pricing-palden .pricing-period {
+    font-size: 0.15em;
+    padding: 0 0 0 0.5em;
+    font-style: italic;
+}
+
+.pricing-palden .pricing__sentence {
+    font-weight: bold;
+    margin: 0 0 1em 0;
+    padding: 0 0 0.5em;
+}
+
+.pricing-palden .pricing-feature-list {
+    margin: 0;
+    padding: 0.25em 0 2.5em;
+    list-style: none;
+    text-align: center;
+}
+
+.pricing-palden .pricing-feature {
+    padding: 1em 0;
+}
+
+.pricing-palden .pricing-action {
+    font-weight: bold;
+    margin: auto 3em 2em 3em;
+    padding: 1em 2em;
+    color: #fff;
+    border-radius: 30px;
+    background: linear-gradient(135deg,#a93bfe,#584efd);
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+.pricing-palden .pricing-action:hover,
+.pricing-palden .pricing-action:focus {
+    background: linear-gradient(135deg,#fd7d57,#f55d59);
+}
+
+.pricing-palden .pricing-item--featured .pricing-deco {
+    padding: 5em 0 8.885em 0;
+}
+
+.promo-code {
+    color: #001d2f;
+    transition: all .3s;
+}
+
+.promo-code:hover {
+    transform: scale(1.02);
+    color: #001d2f;
+}
+
+.faq__h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 650;
+}
+
+.card-link, .card-link:hover, .card-body {
+    color: #001d2f;
+}
+
+.start {
+    background: #F5F6F7;
+    padding: 4.5rem;
+    color: white;
+    margin-top: 4rem;
+}
+
+.start-card {
+    background: white;
+    color: #001d2f;
+    padding: 5rem;
+}
+
+@media (max-width:767px) {
+    .services-block {
+        margin-top: 1rem;
+    }
+    .img-services {
+        display: none;
+    }
+    .start-card {
+        padding: 1.5rem;
+    }
+}
+
+.start-section-title {
+    margin: 0px 0 10px;
+    font-size: 1.75rem;
+    line-height: 2.25rem ;
+}
+
+.start-btn {
+    margin: 1rem;
+    background: #001d2f;
+    color: white;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: 2.85em;
+    width: 200px ;
+    line-height: 2.95em;
+    padding: 0 2em;
+    text-align: center;
+    transition: .3s all;
+    -webkit-transition: .3s all;
+    -moz-transition: .3s all;
+    -ms-transition: .3s all;
+    -o-transition: .3s all;
+}
+
+.start-btn:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+#footer {
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    display: block;
+    font-size: 0.875em;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.py-11 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+
+/* PLUS */
+.plus-navbar {
+    background: linear-gradient(90deg, #6430E1, #8534E4);
+}
+
+.plus-nav-link {
+    color: white !important;
+}
+
+.plus-header {
+    background: linear-gradient(90deg, #6430E1, #8534E4);
+}
+
+.plus-header-title {
+    color: white !important;
+    font-family: "FSKim Regular" !important;
+    font-size: 3.2rem !important;
+    font-weight: 700 !important;
+    margin: 0 0 0.5em 0;
+}
+
+.plus-header-sub {
+    font-family: "FSKim Regular" !important;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0 0 2em 0;
+}
+
+/* MUSIC */
+.music-navbar {
+    background: linear-gradient(135deg, #8BC6EC, #9599E2);
+}
+
+.music-nav-link {
+    color: white !important;
+}
+
+.music-header {
+    background: linear-gradient(135deg, #8BC6EC, #9599E2);
+}
+
+.music-header-title {
+    color: white !important;
+    font-family: "FSKim Regular" !important;
+    font-size: 3.2rem !important;
+    font-weight: 700 !important;
+    margin: 0 0 0.5em 0;
+}
+
+.music-header-sub {
+    font-family: "FSKim Regular" !important;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0 0 2em 0;
+}
+
+.music__h1 {
+    font-weight: 650;
+    text-align: center;
+    opacity: .8;
+}
+
+.music-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.music-card {
+    background: white;
+    width: 320px;
+    height: 250px;
+    box-shadow: 0 0 5px 0 rgb(68 43 148 / 20%);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+}
+
+@media (max-width: 769px) {
+    .music-card {
+        margin-right: 0;
+    }
+}
+
+.music-icon {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.music-music {
+    color: #F95355;
+}
+
+.music-edit {
+    color: #258DF1;
+}
+
+.music-dollar {
+    color: #65BC6A;
+}
+
+.music-card-title {
+    text-align: center;
+    margin-top: 2.5rem;
+    font-weight: 650;
+    opacity: .9;
+}
+
+.music-card-desc {
+    text-align: center;
+    margin: 1rem;
+    font-size: 12px;
+}
+
+.mc-music, .mc-edit, .mc-dollar {
+    transition: all .3s;
+}
+
+
+.mc-music:hover, .mc-edit:hover, .mc-dollar:hover {
+    transform: translateY(-10px);
+}
+
+
+/* Made by Coolink */

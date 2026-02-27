@@ -1,0 +1,79 @@
+body {
+    background: #121212 !important;
+}
+
+.navbar {
+    background: #121212 !important;
+}
+
+#sidebar, .sidebar-header {
+    background: #1B1B1B !important;
+}
+
+#sidebar ul li.active>a, a[aria-expanded="true"] {
+    background: #1B1B1B !important;
+}
+
+#sidebar ul li a:hover {
+    color: #2F7AE5;
+    background: #1B1B1B !important;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .5) !important;
+}
+
+#sidebar hr {
+    border: 1px solid rgba(255, 255, 255, .5) !important;
+}
+
+ul ul a {
+    font-size: 0.75em !important;
+    padding-left: 30px !important;
+    background: #1B1B1B !important;
+}
+
+.status-card, .info-card, .edit-card, .plus-card, .url-card, .card-account, .card-soon{
+    background: #1B1B1B !important;
+}
+
+.card-title {
+    color: white !important;
+}
+
+.website_title {
+    color: white !important;
+}
+
+.card {
+    background: #1B1B1B !important;
+    color: white !important;
+}
+
+.settings-font label {
+    background: #121212 !important;
+    color: white !important;
+}
+
+.form-control {
+    background: #121212 !important;
+    border: 1px solid transparent !important;
+    color: rgba(255, 255, 255, .8) !important;
+}
+
+.nav-name {
+    color: white !important;
+}
+
+.dropdown-menu {
+    background: #1B1B1B !important;
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+.p-desc {
+    color: rgba(255, 255, 255, .8) !important;
+}

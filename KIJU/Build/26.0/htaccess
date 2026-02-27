@@ -1,0 +1,66 @@
+# Kiju Version 10.15
+
+RewriteEngine on
+# RewriteBase /
+
+Options +FollowSymlinks
+Options All -Indexes
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^beta.kiju.me$
+RewriteRule ^$ https://beta.kiju.me/home [L,R=301,QSA]
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ public/?p=$1 [L]
+
+# Recherche
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^search/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ search&type=$1&query=$2 [L,QSA]
+
+# Communautés
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^c/([0-9]+)$ community&community_uid=$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^c/([0-9]+)&err=([a-zA-Z0-9_-]+)$ community&community_uid=$1&err=$2 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^c/([0-9]+)/([a-zA-Z0-9_-]+)$ community&community_uid=$1&tabs=$2 [L,QSA]
+
+# Profil
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^u/([a-zA-Z0-9]+)$ profile&profile_username=$1 [L,QSA]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^u/([a-zA-Z0-9]+)/([a-zA-Z0-9_-]+)$ profile&profile_username=$1&tabs=$2 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^u/([a-zA-Z0-9]+)&err=([a-zA-Z0-9_-]+)$ profile&profile_username=$1&err=$2 [L,QSA]
+
+# Publications
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^p/([0-9a-zA-Z]+)$ view_post&post_id=$1 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^p/([0-9a-zA-Z]+)&err=([a-zA-Z0-9_-]+)$ view_post&post_id=$1&err=$2 [L,QSA]
+
+ErrorDocument 404 /home
+ErrorDocument 403 /home

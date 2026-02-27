@@ -1,0 +1,518 @@
+@media screen and (max-width: 1563px) {
+	.container {
+		max-width: 1340px
+	}
+
+	.account {
+		margin-left: 300px;
+		margin-right: 300px
+	}
+
+	.category-card {
+		height: 120px;
+	}
+
+	.category-card .logo-sw {
+		height: 60px;
+		width: 140px;
+	}
+
+	.show-grid {
+		display: grid;
+		grid-template-columns: repeat(7, 1fr);
+		margin-bottom: 25px;
+	}
+
+	.avatarContainer {
+		margin: auto 150px;
+	}
+
+	.profileAvatarsGroup, .profileName {
+		width: calc(100% - 300px);
+	}
+	.profileName {
+		left: 150px;
+	}
+}
+
+@media screen and (max-width: 1390px) {
+	.container {
+		max-width: 1140px
+	}
+
+	.account {
+		margin: 90px 200px 0
+	}
+
+	.az-list .letter {
+		padding: 3px 8px;
+	}
+
+	.movies-grid {
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	.category-card {
+		height: 100px;
+	}
+
+	.navbar-form {
+		margin-right: 40px;
+	}
+
+	.navbar-form-search {
+		padding: 10px 15px;
+	}
+
+	.navbar-nav li:not(:last-child) {
+		margin-right: 40px;
+	}
+}
+
+@media screen and (max-width: 1243px) {
+	.show-grid {
+		grid-template-columns: repeat(6, 1fr);
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.account {
+		margin: 130px 100px 0
+	}
+}
+
+@media screen and (max-width: 1180px) {
+	.container {
+		max-width: 950px
+	}
+}
+
+@media screen and (max-width: 1066px) {	
+	.show-grid {
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.container {
+		max-width: 750px
+	}
+
+	.movie-infos .movie-desc {
+		width: 350px;
+		margin-right: 10px
+	}
+
+	.account {
+		margin: 130px 0 0
+	}
+}
+
+@media screen and (max-width: 945px) {	
+	.show-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media screen and (max-width: 869px) {
+	.avatarContainer {
+		margin: auto 100px;
+	}
+
+	.profileAvatarsGroup, .profileName {
+		width: calc(100% - 200px);
+	}
+	.profileName {
+		left: 100px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.container {
+		max-width: 550px
+	}
+
+	.platforms .ps {
+		display: none
+	}
+	.show-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		max-width: 350px
+	}
+
+	.banner-card .card-title {
+		font-size: 2em !important
+	}
+
+	.account {
+		margin: 100px 0 0
+	}
+    .pass-plus .pass-plus-content .icon-title {
+        font-size: 50px;
+    }
+    .pass-plus .pass-plus-content .title {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    .pass-plus .pass-plus-content button {
+        font-size: 20px;
+    }
+    .show-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.bg-movie-home {
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(26, 29, 41) 100%), url('../images/bg-mobile/thor-love-and-thunder.jpg') !important;
+	}
+}
+
+@media screen and (max-width: 436px) {
+	.banner-card .card-description {
+		font-size: 13px
+	}
+}
+
+@media screen and (max-width: 803px) {
+	.comparaison {
+		width: 500px
+	}
+}
+
+@media screen and (max-width: 603px) {
+	.comparaison {
+		width: 400px
+	}
+
+	.comparaison th:first-child {
+		padding-right: 50px
+	}
+}
+
+@media screen and (max-width: 503px) {
+	.comparaison {
+		width: 300px
+	}
+
+	.comparaison th:first-child {
+		padding-right: 0
+	}
+}
+
+@media screen and (max-width: 463px) {
+	.sp-header .profiles .profile .avatar {
+		width: 75px;
+		height: 75px
+	}
+
+	.sp-header .profiles .profile .avatar span {
+		line-height: 75px;
+		font-size: 35px
+	}
+}
+
+@media screen and (max-width: 653px) {
+	.comingSoon .soonHeader .text {
+		margin-top: 150px
+	}
+
+	.comingSoon .soonHeader .text .ready-for {
+		font-size: 30px
+	}
+
+	.comingSoon .soonHeader .text .title {
+		font-size: 70px;
+		line-height: 70px
+	}
+
+	.comingSoon .soonHeader .counter h2,
+	.comingSoon .soonHeader .counter p {
+		font-size: 40px
+	}
+	.avatarContainer {
+		margin: auto 50px;
+	}
+
+	.profileAvatarsGroup, .profileName {
+		width: calc(100% - 100px);
+	}
+	.profileAvatarsGroup {
+		top: 150px;
+	}
+	.profileName {
+		left: 50px;
+		top: 125px;
+		font-size: 25px;
+		line-height: 25px;
+		padding-bottom: 25px;
+	}
+	.profileName ion-icon {
+		font-size: 25px;
+	}
+	.avatarTVFLogo {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+@media screen and (max-width: 463px) {
+	.profileAvatarsGroup, .profileName {
+		width: calc(100% - 50px);
+	}
+	.profileName {
+		left: 25px;
+		font-size: 25px;
+		line-height: 25px;
+		padding-bottom: 25px;
+	}
+	.profileName ion-icon {
+		font-size: 25px;
+	}
+
+}
+
+@media screen and (max-width: 378px) {
+	.avatarContainer {
+		margin: auto 35px;
+	}
+	.pAConformBtns a:first-child, .pAConformBtns a:last-child {
+		padding: 3px 17px;
+	}
+}
+
+@media screen and (max-width: 382px) {
+	.addProfiles > div, .manageProfiles > div, .editProfile > .editProfileContent {
+		width: 330px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	:root {
+		--px: 80px
+	}
+
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		z-index: 50
+	}
+
+	header.active {
+		top: 250px
+	}
+
+	nav,
+	.navbar-actions {
+		display: none
+	}
+
+	.navbar {
+		justify-content: center;
+	}
+	
+	.navbar-mb-l {
+		display: block;
+	}
+
+	.navbar-brand {
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 9999
+	}
+
+	.card-description {
+		display: none
+	}
+
+	.nav-mobile {
+		display: block !important
+	}
+
+	.banner {
+		margin: 0 0 30px !important
+	}
+
+	.banner-card {
+		height: 400px;
+	}
+
+	.banner-card .card-title {
+		font-size: 2.5em
+	}
+
+	.a_d_s-card .a_d_s {
+		margin: 15px 0
+	}
+
+	.banner-card iframe {
+		margin-top: 20px
+	}
+
+	.category-grid {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+	}
+
+	.footer-copyright {
+		margin-bottom: 70px;
+	}
+	.movies-grid {
+		grid-template-columns: repeat(5, 1fr);
+	}
+	.main-home {
+		margin-top: 0;
+	}
+	.bg-movie {
+		height: 450px;
+	}
+	.banner-card .card-content {
+		bottom: 45px;
+	}
+	.banner-card .card-content img {
+		width: 300px;
+		margin: 0 auto 25px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.movies-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	:root {
+		--px: 60px
+	}
+
+	.movies-all {
+		margin-top: 120px
+	}
+}
+
+@media screen and (max-width:  800px) {
+	.movies-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	:root {
+		--px: 40px
+	}
+
+	.az-list {
+		overflow-x: scroll;
+		overflow-y: hidden
+	}
+
+	.az-list .letter {
+		margin-right: 5px
+	}
+
+	.filter-bar {
+		flex-direction: column;
+		align-items: flex-start
+	}
+
+	.filter-bar select {
+		margin-bottom: 20px
+	}
+
+	.filter-radios {
+		width: 100%
+	}
+
+	.backIcon span {
+		display: none;
+	}
+
+	.banner-card .card-content {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+@media screen and (max-width:  600px) {
+	.movies-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 575px) {
+	:root {
+		--px: 20px;
+		--section-heading: 32px;
+		--fs-lg: 20px
+	}
+
+	.navbar-search-btn {
+		margin-right: 20px
+	}
+
+	.navbar-form-search {
+		margin-right: 20px
+	}
+
+	.navbar-form-btn {
+		right: 55px
+	}
+	.wrapper {
+		margin-bottom: 20px
+	}
+}
+
+@media screen and (max-width: 452px) {
+	.banner-card .card-content img {
+		width: 270px;
+		margin: 0 auto 20px;
+	}
+	.card-btn a {
+		width: 150px;
+		height: 40px;
+		font-size: 17px;
+	}
+	.card-btn a ion-icon {
+		font-size: 22px;
+	}
+}
+@media screen and (max-height: 905px) {
+	.profileAvatarsGroup {
+		height: 600px;
+	}
+}
+@media screen and (max-height: 771px) {
+	.profileAvatarsGroup {
+		height: 520px;
+	}
+}
+@media screen and (max-height: 700px) {
+	.profileAvatarsGroup {
+		height: 450px;
+	}
+	.sp-header .title {
+		margin: 25px 0 10px 0;
+	}
+}
+@media screen and (max-height: 600px) {
+	.profileAvatarsGroup {
+		height: 400px;
+	}
+}
+@media screen and (max-height: 559px) {
+	.profileAvatarsGroup {
+		height: 350px;
+	}
+}
+@media screen and (max-height: 485px) {
+	.profileAvatarsGroup {
+		height: 300px;
+	}
+}

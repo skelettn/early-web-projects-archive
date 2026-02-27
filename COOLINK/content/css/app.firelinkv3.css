@@ -1,0 +1,161 @@
+/* copy 2020 Hypera. */
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.float-img {
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+.flag {
+    max-width: 30px;
+    height: auto;
+    border-radius: 4px;
+    margin: 0 20px;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+.after-brand {
+	margin-bottom: 20px;
+}
+
+.btn-success {
+    background-color: #3EC3E0;
+    border-color: #3EC3E0;
+    padding: .675rem 1.15rem;
+    -webkit-box-shadow: 0 4px 37px -11px #3EC3E0;
+    box-shadow: 0 4px 37px -11px #3EC3E0;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #3EC3E0;;
+    border-color:#3EC3E0;;
+}
+
+
+.btn-n {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color:#27b7d7;;
+    border-color:#27b7d7;;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    color: white;
+
+}
+
+.btn-n:hover {
+    background-color: #3EC3E0 !important;
+    border-color: #3EC3E0;;
+    border: 1px solid transparent;
+}
+
+.bg-blu-6 {
+    background-color: #3ec3e0;
+}
+
+.Link {
+    cursor: pointer;
+}
+
+.font-32 {
+    font-size: 32px !important;
+}
+
+.font-18 {
+    font-size: 18px !important;
+}
+
+
+
+.pricing-card-best-offer {
+    border: 3px solid #3EC3E0;
+}
+
+.pricing-card-best-popup {
+    display: table;
+    padding: 6px 20px;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%,-100%);
+    transform: translate(-50%,-100%);
+    transition: background-color .25s ease-out;
+    color: white;
+    font-size: 13px;
+    line-height: 1.42857;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+
+@media screen and (min-width: 75em) {
+.promotion-card {
+    padding: .5em 13%;
+}
+
+/* MODAL OFFER */
+
+.modal-offer {
+    text-align: center;
+    background-image: linear-gradient(-50deg, #318ce7 0%, #171759 100%);
+    border-radius: 10px;
+    border-color: transparent;
+ }
+ 
+
+ .modal-offer-logo{margin-top:40px;margin-bottom: 40px;}
+
+ .modal-offer-title {
+     font-weight: 800;
+     color: white;
+     text-align: center;
+ }
+
+.modal-offer-description {
+    color: white;
+    text-align: center;
+    font-size: 20px !important;
+}
+.modal-offer-bold {
+    color: white;
+    font-weight: 800;
+}
+
+.offer-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+/* MODAL OFFER */

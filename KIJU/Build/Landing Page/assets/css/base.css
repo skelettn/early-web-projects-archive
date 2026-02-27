@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Vina+Sans&display=swap');
+
+@font-face {
+    font-family: "FK Bold";
+    src: url("../fonts/FKGrotesk-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "FK Slanted";
+    src: url("../fonts/FKScreamer-Slanted.woff") format("woff");
+}
+
+@font-face {
+    font-family: "FK Upright";
+    src: url("../fonts/FKScreamer-Upright.woff") format("woff");
+}
+
+:root {
+    --main-bg-color: #b621fe;
+    --container: 1250px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 calc(var(--container) / 2);
+}
+
+h1, h2 {
+    font-family: "FK Upright";
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
